@@ -28,11 +28,19 @@ export default class Tablero {
         }
 
     }
-    serpiente() {
-
+    serpiente(posicion) {
+        let retroceder = posicion
+        while(this._casillas[posicion] != this._consecuencia[retroceder]){
+            retroceder--
+        }
+        return retroceder - posicion
     }
-    escalera() {
-
+    escalera(posicion) {
+        let aumentar = posicion
+        while(this._casillas[posicion] != this._consecuencia[retroceder]){
+            aumentar++
+        }
+        return aumentar + posicion
     }
 
 }
