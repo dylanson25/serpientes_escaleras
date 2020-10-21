@@ -37,7 +37,7 @@ export default class Tablero {
     }
     escalera(posicion) {
         let aumentar = posicion
-        while(this._casillas[posicion] != this._consecuencia[retroceder]){
+        while(this._casillas[posicion] != this._consecuencia[aumentar]){
             aumentar++
         }
         return aumentar + posicion
